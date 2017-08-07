@@ -13,5 +13,7 @@ public class Constants {
         Place pl = new Place();
         pl.place();
 
+
+        System.out.println("Test-test-test");
     }
 }
