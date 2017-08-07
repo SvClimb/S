@@ -6,15 +6,12 @@ public class Constants {
     public static  void main(String[] args) {
 
 
-        Bomb b = new Bomb();
-        b.bombGen(b.bombPlace);
-        b.printBomb(b.bombPlace);
+       Bomb b = new Bomb();
+       b.bombGen(b.bombPlace);
+       b.printBomb(b.bombPlace);
 
-        Place pl = new Place();
-        pl.place();
-
-
-        System.out.println("Test-test-test");
+       // Place pl = new Place();
+      //  pl.place();
 
     }
 }
