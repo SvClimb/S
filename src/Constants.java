@@ -18,6 +18,23 @@ public class Constants {
         BufferedReader  reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите координаты: ");
         String s = reader.readLine();
+        System.out.println(reader.toString() + " " + b.toString());
+        Robot r = new Robot("Test");
+        System.out.println(r.toStr());
+    }
 
+
+    public static class Robot
+    {
+        private String name;
+
+        public Robot(String name) {
+            this.name = name;
+        }
+
+       // @Override
+        public String toStr() {
+            return "name=" + name;
+        }
     }
 }
