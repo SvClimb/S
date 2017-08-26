@@ -1,6 +1,8 @@
 /**
  * Created by Svyatoslav on 02.02.2017.
  */
+import javax.swing.*;
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -21,6 +23,16 @@ public class Constants {
         System.out.println(reader.toString() + " " + b.toString());
         Robot r = new Robot("Test");
         System.out.println(r.toStr());
+
+        EventQueue.invokeLater(new Runnable()
+ {
+public void run()
+{
+ImageFrame frame = new ImageFrame();
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+frame.setVisible(true);
+}
+});
     }
 
 
